@@ -25,7 +25,7 @@ jobs:
 
     - name: Upload Artifact
       if: success()  # Only execute if previous steps were successful
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: petclinic-war
         path: "/petclinic.war"
