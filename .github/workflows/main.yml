@@ -21,12 +21,12 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: petclinic-war
-        path: "/petclinic.war"
+        path: "/target/petclinic.war"
 
     - name: Upload Artifact
       if: success()  # Only execute if previous steps were successful
       uses: actions/upload-artifact@v4
       with:
         name: petclinic-war
-        path: "/petclinic.war"
+        path: "/target/petclinic.war"
         if-no-files-found: error  # Fail the workflow if no files are found to upload
